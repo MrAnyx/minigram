@@ -1,0 +1,12 @@
+{
+   "[javascript][typescript][vue]": {
+      "editor.formatOnSave": false
+   },
+   "editor.codeActionsOnSave": {
+      "source.fixAll": true
+   },
+   "[json][jsonc][html][css][scss]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   }
+}
