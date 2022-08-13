@@ -6,4 +6,7 @@ export default defineConfig({
    plugins: [vue()],
    root: "./src/popup",
    base: "./",
+   build: {
+      outDir: "../dist",
+   },
 });

@@ -1,7 +1,7 @@
 {
    "manifest_version": 3,
    "name": "Minigram",
-   "version": "0.0.1",
+   "version": "1.0.0",
    "description": "Little extension that removes useless parts of the Instagram UI",
    "permissions": ["storage"],
    "short_name": "Minigram",
@@ -19,14 +19,13 @@
          "128": "assets/minigram-128.png"
       },
       "default_title": "Options",
-      "default_popup": "popup/dist/index.html"
-      // "default_popup": "popup/dev.html"
+      "default_popup": "dist/index.html"
    },
    "content_scripts": [
       {
          "run_at": "document_end",
          "matches": ["https://www.instagram.com/*"],
-         "js": ["content-script.js"]
+         "js": ["updateStyle.js"]
       }
    ],
    "background": {

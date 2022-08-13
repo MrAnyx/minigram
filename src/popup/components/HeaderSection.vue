@@ -1,5 +1,5 @@
 <template>
-   <header class="border-slate-600 p-5">
+   <header class="border-slate-600 px-5 py-3">
       <a href="https://github.com/MrAnyx/minigram" target="_blank">
          <Icon size="20" class="text-slate-400 hover:text-orange-500">
             <BrandGithub />
