@@ -1,7 +1,7 @@
 {
    "manifest_version": 3,
    "name": "Minigram",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "description": "Little extension that removes useless parts of the Instagram UI",
    "permissions": ["storage"],
    "short_name": "Minigram",
