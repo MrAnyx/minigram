@@ -25,25 +25,20 @@ const toggleFeedSuggestions = (feedSuggestions) => {
          addStyles(
             "mg-feedSuggestions",
             `
-            ._aak6._aak7._aak8._aak9._aaka {
+            ._aak6._aak7._aak8._aak9._aaka, ._aakb._aakc._aakd, ._aak3, ._ab8b {
                display: none !important;
             }
 
-            ._a3gq ._aam3 {
+            ._aam3 {
                margin-right: unset !important;
                max-width: unset !important;
             }
 
-            ._a3gq ._aam2 {
-               max-width: unset !important;
-               margin-right: unset !important;
-            }
-
-            ._a3gq ._aal- {
+            ._aal- {
                max-width: unset !important;
             }
 
-            ._a3gq ._aalz {
+            ._aalz {
                max-width: 650px !important;
             }
             `
