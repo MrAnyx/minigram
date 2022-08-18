@@ -17,7 +17,7 @@ chrome.runtime.onInstalled.addListener(() => {
          postCommentWriting: true,
          postShareIcon: true,
          postLikesCount: false,
-         postSideSection: true,
+         postSideSection: false,
       },
       () => {}
    );

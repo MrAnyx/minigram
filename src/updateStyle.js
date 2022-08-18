@@ -205,49 +205,19 @@ const toggleHeaderProfile = (headerProfile) => {
    }
 };
 
-const togglePostSideSection = (postSideSection) => {
-   switch (postSideSection) {
-      case true:
-         addStyles(
-            "mg-postSideSection",
-            `
-            ._ab8w._ab94._ab99._ab9h._ab9k._ab9p._abcm ._aata {
-               display: none !important;
-            }
-
-            ._ab8w._ab94._ab99._ab9h._ab9k._ab9p._abcm ._aast {
-               display: none !important;
-            }
-
-            ._ab8w._ab94._ab99._ab9h._ab9m._ab9p._abcm ._aast._aasu {
-               display: none !important;
-            }
-            `
-         );
-         break;
-      case false:
-         removeElement("mg-postSideSection");
-         break;
-      default:
-         break;
-   }
-};
-
 const togglePostComments = (postComments) => {
    switch (postComments) {
       case true:
          addStyles(
             "mg-postComments",
             `
-            ._aat6._aat7 ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abcm:not(:first-child) {
+            ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abaj._abcm, ._ae5q._ae5s._ae5t ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abak._abcm:not(:first-child),
+            ._ae5q._ae5r._ae5s ul._a9ym {
                display: none !important;
             }
 
-            ._aamu._aat0._aat1 ._aamx {
-               display: none !important;
-            }
-
-            ._aamu._aat0 ._aamx {
+            ._aamu._ae3_._ae40._ae41._ae48._ae4g ._aamx,
+            ._aamu._ae3_._ae47._ae48 ._aamx {
                display: none !important;
             }
             `
@@ -267,15 +237,12 @@ const togglePostCommentWriting = (postCommentWriting) => {
          addStyles(
             "mg-postCommentWriting",
             `
-            section._aaoe._aaso._aasp {
+            section._aaoe._ae5y._ae5z._ae5-._ae62,
+            section._aaoe._ae5y._ae5-._ae5_._ae60._ae62 {
                display: none !important;
             }
 
-            section._aaoe._aaso {
-               display: none !important;
-            }
-
-            ._aast ._aasx ._aat8, ._aasw ._aasx ._aat8 {
+            ._ae5u._ae5v._ae5w, ._aasw ._aasx ._aat8 {
                margin-bottom: 14px !important;
             }
             `
@@ -295,11 +262,7 @@ const togglePostShareIcon = (postShareIcon) => {
          addStyles(
             "mg-postShareIcon",
             `
-            ._aamu._aat0._aat1 ._aamy {
-               display: none !important;
-            }
-
-            ._aamu._aat0 ._aamy {
+            ._aamu span._aamy {
                display: none !important;
             }
             `
@@ -319,7 +282,7 @@ const togglePostLikeCount = (postLikesCount) => {
          addStyles(
             "mg-postLikesCount",
             `
-            ._aasx ._aat4._aat5, ._aasx ._aat4 {
+            ._ae5m._ae5o {
                display: none !important;
             }
             `
@@ -327,6 +290,30 @@ const togglePostLikeCount = (postLikesCount) => {
          break;
       case false:
          removeElement("mg-postLikesCount");
+         break;
+      default:
+         break;
+   }
+};
+
+// ._ab8w._ab94._ab99._ab9h._ab9k._ab9p._abcm ._ae65 {
+
+const togglePostSideSection = (postSideSection) => {
+   switch (postSideSection) {
+      case true:
+         addStyles(
+            "mg-postSideSection",
+            `
+            ._ab8w._ab94._ab99._ab9h._ab9m._ab9p._abcm ._ae1h._ae1i._ae1l,
+            ._aatb._aate._aatg._aath._aati ._ae65,
+            ._aa6a._aatb._aate._aatg._aath._aati ._ae1h._ae1j {
+               display: none !important;
+            }
+            `
+         );
+         break;
+      case false:
+         removeElement("mg-postSideSection");
          break;
       default:
          break;
