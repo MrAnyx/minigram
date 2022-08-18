@@ -1,13 +1,14 @@
 {
    "name": "minigram",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "",
    "main": "index.js",
    "scripts": {
       "dev": "vite",
       "build": "vite build",
       "watch": "vite build --watch",
-      "preview": "vite preview"
+      "preview": "vite preview",
+      "export": "node export.js"
    },
    "keywords": [],
    "author": "",
